@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:lightblue;
+  
+}
+.chatbot{
+    width: 420px;
+    height: 550px;
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    position: fixed; 
+ 
+   
+/*centers the content*/
+    top: 10%;      
+    left: 35%;
+    right: 35%;
+    bottom: 100px;
+  
+}
+/* controls the vertical overflow of incoming and outgoing msg */
+.sep{
+    overflow-y: auto;
+    height: 75%;
+}
+
+.chatbot .chatbox{
+    height: 510;
+    overflow-y: auto;   /*controls the vertical overflow of an element.*/
+    padding: 15px 20px 70px;
+    display: flex;
+    flex-direction: column;
+}
+.chat{
+    background-color: rgb(85, 85, 163);
+    padding: 15px; 
+    margin-bottom: 8px;
+    color: white;
+    
+}
+
+.input textarea{
+    width: 370px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    
+    
+    
+}
+.chatbot .input{
+   display: flex;
+    border-top: 1px solid black;
+    position: fixed;
+    bottom: 10px;
+    border-radius: 0px 0px 5px 5px;
+    background-color: white;
+    position: absolute;
+    
+}
+.input{
+    position: absolute;
+}
+#image{
+    width: 50px;
+    cursor: pointer;
+}
+.chatbox .box{
+    display: flex;
+}
+.chatbox .box p{
+    background-color:rgb(85, 85, 163);
+    color: white;
+    padding: 10px 14px;
+    border-radius: 10px 10px 0px 10px;
+    margin: 5px ;
+    max-width: 75%;
+}
+.chatbox .incoming p{
+    color: black;
+    background-color: rgb(245, 237, 237);
+    border-radius: 10px 10px 10px 0px;
+    text-align: left;
+}
+.chatbox .outgoing{
+    justify-content: flex-end
+}
+.box img{
+    /* margin-top: 20px; */
+    width: 50px;
+    height: 50px;
+    
+}
+@media (min-width: 300px) and (max-width: 440px){
+    .chatbot{
+        left: 0px;
+    }
+}
+  
